@@ -1,0 +1,77 @@
+html {
+  height: 100%;
+}
+
+body {
+  background-color: #AAACB5;
+}
+.bookshelf{
+  width: 82%;
+  height: 100%;
+  margin:0 auto;
+  border: 10px #A87328 solid;
+  overflow: hidden;
+  background-image: linear-gradient(#A87328,#A87328,#A87328);
+  background-size: 10px 230px;
+
+}
+
+.book{
+  height: 200px;
+  width: 40px;
+  color: #FFF;
+  float: left;
+  color: white;
+  font-size: 0.9em;
+  font-family: Verdana, sans-serif;
+  margin-bottom: 10px;
+  margin-top: 10px;
+  transition: transform 0.4s ease;
+  background-color: darkgreen;
+  border-left: 2px solid #2b6307;
+  border-right: 2px solid #2F5B12;
+}
+.book h2{
+  transform: rotate(0.25turn) translateY(0px);
+}
+.book:hover {
+  transform: scale(1.05);
+}
+
+
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    left: 0;
+    top: 0px;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+
+/* Modal Content/Box */
+.modal-content {
+    background-color: #fefefe;
+    margin: 15% auto; /* 15% from the top and centered */
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%; /* Could be more or less, depending on screen size */
+}
+
+/* The Close Button */
+.close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
